@@ -3,12 +3,14 @@ import { BrowserRouter, Route, Routes } from "react-router";
 import "./index.css";
 import Home from "./pages/Home/Home";
 import UnderConstruction from "./pages/UnderConstruction/UnderConstruction";
+import Spotlight from "./pages/Spotlight/Spotlight";
 
 createRoot(document.getElementById("root")!).render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/construction" element={<UnderConstruction />} />
+      <Route path="/spotlight" element={<Spotlight />} />
     </Routes>
   </BrowserRouter>,
 );
