@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Minecraftia";
+  src: url("/src/assets/fonts/Minecraftia-Regular.ttf") format(truetype);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  html {
+    font-family: "Minecraftia", monospace;
+    background-color: #ddc9b8;
+  }
+}
