@@ -3,7 +3,7 @@ import { HashLink } from "react-router-hash-link";
 export default function SideNav() {
   return (
     <>
-      <div className="w-1/4">
+      <div className="sticky top-5 ml-5 h-1/2 self-start bg-[#ede3da] border-2 border-solid border-black rounded-xl">
         <HashLink smooth to="/handbook/#philosophy">
           <p>Server Philosophy</p>
         </HashLink>

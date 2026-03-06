@@ -14,36 +14,51 @@ export default function Handbook() {
 
   return (
     <>
-      {navBar && <Navbar />}
-
-      {sideBar && <SideNav />}
-
       <div>
         <button onClick={hideNavs}>Click</button>
       </div>
 
-      <div className="grid grid-cols-4">
-        <div className="col-span-2 justify-items-center col-start-2 bg-[#c4b3a5] p-5 border-2 border-solid border-black rounded-xl">
+      <div className="grid grid-cols-4 gap-4">
+        {navBar && (
+          <div className="col-span-1">
+            <Navbar />
+          </div>
+        )}
+        {sideBar && (
+          <div className="col-span-1">
+            <SideNav />
+          </div>
+        )}
+        <div className="col-span-2 justify-items-center col-start-2 bg-[#ede3da] p-5 border-2 border-solid border-black rounded-xl">
           <p className="text-3xl text-center" id="philosophy">
             Server Philosophy
           </p>
           <p className="my-2">
-            This server is intentionally designed as a long-term world. <br />
-            <br />
+            This server is intentionally designed as a long-term world.{" "}
+          </p>
+          <p>
             It starts small and expands slowly as the community grows. The goal
             is to create density, shared infrastructure, and meaningful history,
-            not isolation or speedrunning. <br /> <br />
+            not isolation or speedrunning.
+          </p>
+          <p className="my-5">
             Systems such as travel costs and the diamond economy are
             intentionally structured to encourage cooperation, town-building,
-            and long-term progression. <br /> <br />
-            There are no seasons. <br /> There are no resets. <br /> This world
-            grows outward over time. <br /> <br /> If you’re looking for a
-            fast-paced, high-chaos environment, this may not be the right server
-            for you. <br />
-            <br />
+            and long-term progression.
+          </p>
+          <ul>
+            <li className="mb-2">There are no seasons.</li>
+            <li className="mb-2"> There are no resets.</li>
+            <li className="mb-2">This world grows outward over time.</li>
+          </ul>
+          <p>
+            If you’re looking for a fast-paced, high-chaos environment, this may
+            not be the right server for you.
+          </p>
+          <p className="my-2">
             If you’re looking to build something lasting with others, welcome.
           </p>
-          <br />
+
           <p className="text-3xl text-center" id="expectations">
             Community Expectations
           </p>
@@ -71,14 +86,11 @@ export default function Handbook() {
               respectfully.
             </BulletItem>
           </ul>
-          <br />
           <p>
             Moderators cannot issue permanent bans. Major decisions are sent to
             review by an admin or the owner to ensure fairness and consistency.
-            <br /> <br />
             This server prioritizes stability over speed of judgment.
           </p>
-          <br />
           <p className="text-3xl text-center" id="expansion">
             World Structure & Expansion
           </p>
