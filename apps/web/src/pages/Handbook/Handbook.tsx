@@ -91,7 +91,7 @@ export default function Handbook() {
             review by an admin or the owner to ensure fairness and consistency.
             This server prioritizes stability over speed of judgment.
           </p>
-          <p className="text-3xl text-center" id="expansion">
+          <p className="text-3xl text-center my-3" id="expansion">
             World Structure & Expansion
           </p>
           <p>The world begins with a limited border.</p>
@@ -108,11 +108,11 @@ export default function Handbook() {
             <BulletItem>Preserve long-term history.</BulletItem>
           </ul>
           <p className="mb-5">Expansion is part of the server’s identity.</p>
-          <p className="text-3xl text-center" id="travel">
+          <p className="text-3xl text-center mb-2" id="travel">
             Travel & Teleportation
           </p>
           <p>Travel is intentionally designed with light friction.</p>
-          <p className="text-2xl mt-2">Physical Travel</p>
+          <p className="text-2xl my-2">Physical Travel</p>
           {/* Not sure whether this should be centered ^ (will ask big boss man for opinion) */}
           <p>The following changes will be made for physical travel:</p>
           <ul>
@@ -127,7 +127,7 @@ export default function Handbook() {
               player-built infrastructure
             </BulletItem>
           </ul>
-          <p className="text-2xl mt-2">Command Teleports</p>
+          <p className="text-2xl my-2">Command Teleports</p>
           <p>
             The following commands cost{" "}
             <span className="font-bold">1 diamond</span> from your wallet:
