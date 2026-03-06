@@ -4,7 +4,6 @@ import "./index.css";
 import Home from "./pages/Home/Home";
 import UnderConstruction from "./pages/UnderConstruction/UnderConstruction";
 import Spotlight from "./pages/Spotlight/Spotlight";
-import Admin from "./pages/Admin/Admin";
 import Handbook from "./pages/Handbook/Handbook";
 
 createRoot(document.getElementById("root")!).render(
@@ -13,7 +12,6 @@ createRoot(document.getElementById("root")!).render(
       <Route path="/" element={<Home />} />
       <Route path="/construction" element={<UnderConstruction />} />
       <Route path="/spotlight" element={<Spotlight />} />
-      <Route path="/admin" element={<Admin />} />
       <Route path="/handbook" element={<Handbook />} />
     </Routes>
   </BrowserRouter>,
