@@ -1,40 +1,21 @@
 import Navbar from "../../shared/Nav";
 import SideNav from "./components/SideNav";
 import BulletItem from "./components/BulletItem";
-import { useState } from "react";
 
 export default function Handbook() {
-  const [sideBar, showSideBar] = useState(false);
-  const [navBar, hideNavBar] = useState(true);
-
-  function hideNavs() {
-    showSideBar(!sideBar);
-    hideNavBar(!navBar);
-  }
-
   return (
     <>
-      <div>
-        <button onClick={hideNavs}>Click</button>
-      </div>
-
       <div className="grid grid-cols-4 gap-4">
-        {navBar && (
-          <div className="col-span-1">
-            <Navbar />
-          </div>
-        )}
-        {sideBar && (
-          <div className="col-span-1">
-            <SideNav />
-          </div>
-        )}
-        <div className="col-span-2 justify-items-center col-start-2 bg-[#ede3da] p-5 border-2 border-solid border-black rounded-xl">
+        <div className="col-span-1 col-start-1">
+          <Navbar />
+        </div>
+
+        <div className="col-span-2 justify-items-center col-start-2 bg-[#ede3da] p-5 border-2 border-solid border-black rounded-xl mt-5">
           <p className="text-3xl text-center" id="philosophy">
             Server Philosophy
           </p>
           <p className="my-2">
-            This server is intentionally designed as a long-term world.{" "}
+            This server is intentionally designed as a long-term world.
           </p>
           <p>
             It starts small and expands slowly as the community grows. The goal
@@ -59,7 +40,7 @@ export default function Handbook() {
             If you’re looking to build something lasting with others, welcome.
           </p>
 
-          <p className="text-3xl text-center" id="expectations">
+          <p className="text-3xl text-center mt-10" id="expectations">
             Community Expectations
           </p>
           <p className="my-2">
@@ -91,7 +72,7 @@ export default function Handbook() {
             review by an admin or the owner to ensure fairness and consistency.
             This server prioritizes stability over speed of judgment.
           </p>
-          <p className="text-3xl text-center my-3" id="expansion">
+          <p className="text-3xl text-center mt-10 mb-3" id="expansion">
             World Structure & Expansion
           </p>
           <p>The world begins with a limited border.</p>
@@ -108,11 +89,11 @@ export default function Handbook() {
             <BulletItem>Preserve long-term history.</BulletItem>
           </ul>
           <p className="mb-5">Expansion is part of the server’s identity.</p>
-          <p className="text-3xl text-center mb-2" id="travel">
+          <p className="text-3xl text-center mt-10 mb-2" id="travel">
             Travel & Teleportation
           </p>
           <p>Travel is intentionally designed with light friction.</p>
-          <p className="text-2xl my-2">Physical Travel</p>
+          <p className="text-2xl my-2 text-center">Physical Travel</p>
           {/* Not sure whether this should be centered ^ (will ask big boss man for opinion) */}
           <p>The following changes will be made for physical travel:</p>
           <ul>
@@ -127,9 +108,9 @@ export default function Handbook() {
               player-built infrastructure
             </BulletItem>
           </ul>
-          <p className="text-2xl my-2">Command Teleports</p>
+          <p className="text-2xl my-2 text-center">Command Teleports</p>
           <p>
-            The following commands cost{" "}
+            The following commands cost
             <span className="font-bold">1 diamond</span> from your wallet:
           </p>
           <ul className="mb-5">
@@ -145,7 +126,9 @@ export default function Handbook() {
             <BulletItem>Player-built infrastructure</BulletItem>
             <BulletItem>Physical exploration</BulletItem>
           </ul>
-          <p className="text-2xl my-2">Cardinal Warp System (CWS)</p>
+          <p className="text-2xl my-2 text-center">
+            Cardinal Warp System (CWS)
+          </p>
           <p>At Month 6 (20,000 border), the Cardinal Warp System will open.</p>
           <p className="my-2">
             This system allows teleportation from spawn to 4 fixed warp plates
@@ -161,7 +144,7 @@ export default function Handbook() {
             <BulletItem>Maintain infrastructure relevance</BulletItem>
           </ul>
           <p>Beyond those warp points, physical travel is required.</p>
-          <p className="text-3xl text-center my-2" id="towns">
+          <p className="text-3xl text-center mb-2 mt-10" id="towns">
             Towns & Community Growth
           </p>
           <p>Towns are strongly encouraged but not mandatory.</p>
@@ -178,7 +161,7 @@ export default function Handbook() {
           <p className="my-2 mb-4">
             Isolation is allowed but interaction is rewarded.
           </p>
-          <p className="text-3xl text-center my-2" id="economy">
+          <p className="text-3xl text-center mb-2 mt-10" id="economy">
             Economy Overview
           </p>
           <p className="my-2">
@@ -188,7 +171,7 @@ export default function Handbook() {
           <p className="my-2">There are no server-generated currencies.</p>
           <p className="my-2">There are no admin-injected resources.</p>
           <p className="my-2">All wealth originates from player effort.</p>
-          <p className="text-2xl my-2">Wallet System</p>
+          <p className="text-2xl my-2 text-center">Wallet System</p>
           <p className="my-2">
             Diamonds can be deposited into your wallet. This is secure and fixed
             to your account, and will not be lost on death.
@@ -210,7 +193,9 @@ export default function Handbook() {
           <p className="my-2">
             Withdrawals follow the same structure (no tax on withdrawals).
           </p>
-          <p className="my-2 text-2xl">The 5% Tax & The World Fund</p>
+          <p className="mb-2 mt-5 text-2xl text-center">
+            The 5% Tax & The World Fund
+          </p>
           <p className="my-2 text-xl">
             All deposit point taxes go into the
             <span className="font-bold"> World Fund</span>.
@@ -236,7 +221,7 @@ export default function Handbook() {
             All World Fund transactions will be publicly logged on the website
             for full transparency.
           </p>
-          <p className="text-3xl text-center my-2" id="shops">
+          <p className="text-3xl text-center mb-2 mt-10" id="shops">
             Shops & Trade
           </p>
           <p className="my-2">Shops are player-created</p>
@@ -256,7 +241,7 @@ export default function Handbook() {
           <p className="my-2">
             Monopolies may be moderated if harmful to server balance.
           </p>
-          <p className="text-3xl text-center my-2" id="spotlight">
+          <p className="text-3xl text-center mb-2 mt-10" id="spotlight">
             Town Spotlight
           </p>
           <p className="my-2">
@@ -288,7 +273,7 @@ export default function Handbook() {
             <BulletItem>Reward active communities</BulletItem>
           </ul>
           <p className="my-2">Towns cannot win consecutively.</p>
-          <p className="text-3xl text-center my-2" id="late-game">
+          <p className="text-3xl text-center mb-2 mt-10" id="late-game">
             Villager & Late-Game Balance
           </p>
           <p className="my-2">
@@ -308,16 +293,16 @@ export default function Handbook() {
           <p className="my-2">
             Any mechanical adjustments will be documented clearly.
           </p>
-          <p className="text-3xl text-center my-2" id="staff">
+          <p className="text-3xl text-center mb-2 mt-10" id="staff">
             Staff & Goverance
           </p>
-          <p className="my-2">Moderators:</p>
+          <p className="my-2 text-lg">Moderators:</p>
           <ul>
             <BulletItem>Handle reports</BulletItem>
             <BulletItem>Issue temporary actions</BulletItem>
             <BulletItem>Send cases to review</BulletItem>
           </ul>
-          <p className="my-2">Admins/Owner:</p>
+          <p className="my-2 text-lg">Admins/Owner:</p>
           <ul>
             <BulletItem>Make final disciplinary decisions</BulletItem>
             <BulletItem>Oversee economic systems</BulletItem>
@@ -326,7 +311,7 @@ export default function Handbook() {
           <p className="my-2">
             Staff are expected to act calmly, fairly, and transparently.
           </p>
-          <p className="text-3xl text-center my-2" id="transparency">
+          <p className="text-3xl text-center mb-2 mt-10" id="transparency">
             Transparency
           </p>
           <p className="my-2">This server values openness.</p>
@@ -338,7 +323,7 @@ export default function Handbook() {
             <BulletItem>Town spotlight archive</BulletItem>
           </ul>
           <p className="my-2">Trust is built through clarity.</p>
-          <p className="text-3xl text-center" id="final">
+          <p className="text-3xl text-center mb-2 mt-10" id="final">
             Final Notes
           </p>
           <p className="my-2">This server is built slowly and deliberately.</p>
@@ -358,6 +343,9 @@ export default function Handbook() {
           <p className="my-2">
             If that resonates with you, you’re exactly who this world is for.
           </p>
+        </div>
+        <div className="col-span-1 col-start-4">
+          <SideNav />
         </div>
       </div>
     </>

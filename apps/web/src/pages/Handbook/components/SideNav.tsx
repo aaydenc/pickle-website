@@ -47,6 +47,9 @@ export default function SideNav() {
           <HashLink smooth to="/handbook/#final" className="text-lg my-2">
             <p>Final Notes</p>
           </HashLink>
+          <HashLink smooth to="/handbook/#philosophy" className="text-lg my-2">
+            Back to top
+          </HashLink>
         </div>
       </div>
     </>
