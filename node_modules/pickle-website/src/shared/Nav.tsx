@@ -54,9 +54,7 @@ export default function Navbar() {
             className={({ isActive }) =>
               isActive ? "underline" : "text-black"
             }
-          >
-            <ListItem>Server Transaction log</ListItem>
-          </NavLink>
+          ></NavLink>
         </ul>
       </div>
 
