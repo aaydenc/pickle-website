@@ -48,15 +48,6 @@ export default function Navbar() {
           >
             <ListItem>Town Spotlight</ListItem>
           </NavLink>
-          <NavLink
-            to="/construction"
-            end
-            className={({ isActive }) =>
-              isActive ? "underline" : "text-black"
-            }
-          >
-            <ListItem>Server Transaction log</ListItem>
-          </NavLink>
         </ul>
       </div>
 
