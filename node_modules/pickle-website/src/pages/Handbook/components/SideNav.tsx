@@ -25,12 +25,6 @@ export default function SideNav() {
           <HashLink smooth to="/handbook/#towns" className="text-lg my-2">
             <p>Towns & Community Growth</p>
           </HashLink>
-          <HashLink smooth to="/handbook/#economy" className="text-lg my-2">
-            Economy Overview
-          </HashLink>
-          <HashLink smooth to="/handbook/#shops" className="text-lg my-2">
-            <p>Shops & Trade</p>
-          </HashLink>
           <HashLink smooth to="/handbook/#spotlight" className="text-lg my-2">
             <p>Town Spotlight</p>
           </HashLink>
@@ -43,6 +37,9 @@ export default function SideNav() {
             className="text-lg my-2"
           >
             <p>Transparency</p>
+          </HashLink>
+          <HashLink smooth to="/handbook/#staff" className="text-lg my-2">
+            <p>Staff & Governance</p>
           </HashLink>
           <HashLink smooth to="/handbook/#final" className="text-lg my-2">
             <p>Final Notes</p>

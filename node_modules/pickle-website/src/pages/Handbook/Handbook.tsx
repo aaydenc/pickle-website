@@ -6,7 +6,7 @@ export default function Handbook() {
   return (
     <>
       <div className="grid grid-cols-4 gap-4">
-        <div className="col-span-1 col-start-1">
+        <div className="col-span-1 col-start-1 mt-3">
           <Navbar />
         </div>
 
@@ -161,85 +161,24 @@ export default function Handbook() {
           <p className="my-2 mb-4">
             Isolation is allowed but interaction is rewarded.
           </p>
-          <p className="text-3xl text-center mb-2 mt-10" id="economy">
-            Economy Overview
+          <p className="text-3xl text-center mb-2 mt-10" id="spotlight">
+            Towns & Community Growth
           </p>
-          <p className="my-2">
-            The economy is diamond-backed and community-driven.
+          <p className="my-2 mb-4">
+            Towns are strongly encourgaed but not mandatory
           </p>
-          <p className="my-2">Diamonds are the base currency.</p>
-          <p className="my-2">There are no server-generated currencies.</p>
-          <p className="my-2">There are no admin-injected resources.</p>
-          <p className="my-2">All wealth originates from player effort.</p>
-          <p className="text-2xl my-2 text-center">Wallet System</p>
-          <p className="my-2">
-            Diamonds can be deposited into your wallet. This is secure and fixed
-            to your account, and will not be lost on death.
+          <p className="my-2 mb-4">
+            The server is designed to reward density and cooperation. Building
+            near others creates:
           </p>
-          <p className="text-1xl font-bold">Deposit Methods:</p>
-          <p className="my-2">1. Command Deposit</p>
           <ul>
-            <BulletItem>Anywhere</BulletItem>
-            <BulletItem>Maximum 32 diamonds</BulletItem>
-            <BulletItem>15-minute cooldown</BulletItem>
-            <BulletItem>No tax</BulletItem>
+            <BulletItem>Trade opportunities</BulletItem>
+            <BulletItem>Infrastrucutre growth</BulletItem>
+            <BulletItem>Cultural identity</BulletItem>
+            <BulletItem>Spotlight eligibility</BulletItem>
           </ul>
-          <p className="my-2">2. Deposit Pont</p>
-          <ul>
-            <BulletItem>Unlimited deposit</BulletItem>
-            <BulletItem>5% tax</BulletItem>
-            <BulletItem>No cooldown</BulletItem>
-          </ul>
-          <p className="my-2">
-            Withdrawals follow the same structure (no tax on withdrawals).
-          </p>
-          <p className="mb-2 mt-5 text-2xl text-center">
-            The 5% Tax & The World Fund
-          </p>
-          <p className="my-2 text-xl">
-            All deposit point taxes go into the
-            <span className="font-bold"> World Fund</span>.
-          </p>
-          <p className="my-2">The World Fund exists to:</p>
-          <ul>
-            <BulletItem>Fund community events</BulletItem>
-            <BulletItem>Provide event rewards</BulletItem>
-            <BulletItem>Support public builds</BulletItem>
-            <BulletItem>
-              Ensure staff do not need to rely on Creative Mode for community
-              events
-            </BulletItem>
-            <BulletItem>
-              Circulate Diamonds back into the server economy
-            </BulletItem>
-          </ul>
-          <p className="my-2">
-            Staff are not expected to spend their own diamonds on community
-            events.
-          </p>
-          <p className="my-2">
-            All World Fund transactions will be publicly logged on the website
-            for full transparency.
-          </p>
-          <p className="text-3xl text-center mb-2 mt-10" id="shops">
-            Shops & Trade
-          </p>
-          <p className="my-2">Shops are player-created</p>
-          <p className="my-2">Opening a shop requires:</p>
-          <ul>
-            <BulletItem>An apllication</BulletItem>
-            <BulletItem>A one-time diamond fee (32 diamonds)</BulletItem>
-            <BulletItem>Moderator approval</BulletItem>
-          </ul>
-          <p className="my-2">This ensures:</p>
-          <ul>
-            <BulletItem>Quality control</BulletItem>
-            <BulletItem>Fair placement</BulletItem>
-            <BulletItem>Avoidance of economic chaos</BulletItem>
-          </ul>
-          <p className="my-2">Player trade is encouraged</p>
-          <p className="my-2">
-            Monopolies may be moderated if harmful to server balance.
+          <p className="my-2 mb-4">
+            Isolation is allowed, but interaction is rewarded.
           </p>
           <p className="text-3xl text-center mb-2 mt-10" id="spotlight">
             Town Spotlight
@@ -280,7 +219,6 @@ export default function Handbook() {
             Certain vanilla mechanics may be adjusted to preserve:
           </p>
           <ul>
-            <BulletItem>Economic balance</BulletItem>
             <BulletItem>Player interdependence</BulletItem>
             <BulletItem>Long-term progression</BulletItem>
           </ul>
@@ -317,7 +255,6 @@ export default function Handbook() {
           <p className="my-2">This server values openness.</p>
           <p className="my-2">Publicly available information will include:</p>
           <ul>
-            <BulletItem>World Fund transaction log</BulletItem>
             <BulletItem>Major policy changes</BulletItem>
             <BulletItem>Border expansion timeline</BulletItem>
             <BulletItem>Town spotlight archive</BulletItem>
