@@ -1,5 +1,0 @@
-import { drizzle } from "drizzle-orm/node-postgres";
-
-const db = drizzle(process.env.DVB_URL!);
-
-export default db;

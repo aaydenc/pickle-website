@@ -6,6 +6,7 @@ import UnderConstruction from "./pages/UnderConstruction/UnderConstruction";
 import Spotlight from "./pages/Spotlight/Spotlight";
 import Handbook from "./pages/Handbook/Handbook";
 import Apply from "./pages/Apply/Apply";
+import Admin from "./pages/Admin/Admin";
 
 createRoot(document.getElementById("root")!).render(
   <BrowserRouter>
@@ -15,6 +16,7 @@ createRoot(document.getElementById("root")!).render(
       <Route path="/spotlight" element={<Spotlight />} />
       <Route path="/handbook" element={<Handbook />} />
       <Route path="/apply" element={<Apply />} />
+      <Route path="/admin" element={<Admin />} />
     </Routes>
   </BrowserRouter>,
 );
