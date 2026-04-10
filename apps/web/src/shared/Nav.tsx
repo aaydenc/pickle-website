@@ -60,7 +60,7 @@ export default function Navbar() {
 
       <div className="mt-auto p-5">
         <NavLink
-          to="/apply"
+          to="https://forms.gle/5p4PjUfcBhkS9KR49"
           end
           className={({ isActive }) => (isActive ? "underline" : "text-black")}
         >
