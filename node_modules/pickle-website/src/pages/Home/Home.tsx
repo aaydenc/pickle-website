@@ -4,17 +4,17 @@ import pickle_head from "../../assets/imgs/pickle_head_flipped.png";
 
 export default function Home() {
   return (
-    <div className="grid grid-cols-5">
+    <div className="flex">
       <Navbar />
 
-      <div className="col-span-3 col-start-2 flex flex-col items-center gap-6 mt-10">
+      <div className="flex flex-col items-center justify-center gap-6 mt-10 w-full">
         <img
           src={frontier_title}
           alt="Blocky text of the frontiers"
           className="h-30 p-2"
         />
-
-        <div className="flex items-center gap-6">
+        
+        <div className="flex justify-center gap-4">
           <p className="border border-black p-4 rounded-xl text-center max-w-xl">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. In magni
             temporibus nesciunt suscipit non veritatis eaque odit corporis eum
@@ -28,7 +28,8 @@ export default function Home() {
             className="h-40"
           />
         </div>
+        </div>
       </div>
-    </div>
+    
   );
 }
