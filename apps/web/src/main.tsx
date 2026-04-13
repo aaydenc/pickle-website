@@ -14,6 +14,7 @@ createRoot(document.getElementById("root")!).render(
       <Route path="/construction" element={<UnderConstruction />} />
       <Route path="/spotlight" element={<UnderConstruction />} />
       <Route path="/handbook" element={<Handbook />} />
+      <Route path="/map" element={<UnderConstruction />} />
     </Routes>
   </BrowserRouter>,
 );

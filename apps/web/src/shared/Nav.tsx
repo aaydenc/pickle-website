@@ -15,7 +15,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className="sticky top-1 m-2 h-screen flex flex-col border-2 border-solid border-black bg-[#ede3da] rounded-xl w-fit">
+    <div className="sticky top-1 m-2 h-screen flex flex-col border-2 border-solid border-black bg-[#ede3da] rounded-xl">
       <div className="p-5 text-4xl">THE FRONTIERS</div>
 
       <div className="mx-5">
@@ -38,9 +38,17 @@ export default function Navbar() {
           >
             <ListItem>Player Handbook</ListItem>
           </NavLink>
-          <ListItem>Map</ListItem>
           <NavLink
-            to="/construction"
+            to="/map"
+            end
+            className={({ isActive }) =>
+              isActive ? "underline" : "text-black"
+            }
+          >
+            <ListItem>Map</ListItem>
+          </NavLink>
+          <NavLink
+            to="/spotlight"
             end
             className={({ isActive }) =>
               isActive ? "underline" : "text-black"
