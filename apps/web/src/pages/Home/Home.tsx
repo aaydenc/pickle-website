@@ -13,13 +13,15 @@ export default function Home() {
           alt="Blocky text of the frontiers"
           className="h-30 p-2"
         />
-        
+
         <div className="flex justify-center gap-4">
           <p className="border border-black p-4 rounded-xl text-center max-w-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In magni
-            temporibus nesciunt suscipit non veritatis eaque odit corporis eum
-            et quo totam ullam, repellat corrupti reiciendis sit voluptates.
-            Nam, illum.
+            Welcome to The Frontiers! <br />
+            My name is Pixel, and I own and operate this server for anyone to
+            enjoy, completely free of charge. This world has been carefully
+            designed to cultivate collaboration, shared history, and slow but
+            steady growth. So please, apply today and help us build something
+            lasting together.
           </p>
 
           <img
@@ -28,8 +30,7 @@ export default function Home() {
             className="h-40"
           />
         </div>
-        </div>
       </div>
-    
+    </div>
   );
 }
