@@ -6,7 +6,6 @@ import UnderConstruction from "./pages/UnderConstruction/UnderConstruction";
 // import Spotlight from "./pages/Spotlight/Spotlight";
 import Handbook from "./pages/Handbook/Handbook";
 
-
 createRoot(document.getElementById("root")!).render(
   <BrowserRouter>
     <Routes>
