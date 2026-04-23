@@ -5,12 +5,11 @@ import BulletItem from "./components/BulletItem";
 export default function Handbook() {
   return (
     <>
-      <div className="grid grid-cols-4 gap-4">
-        <div className="col-span-1 col-start-1 mt-3">
+      <div className="flex gap-4">
+        <div className="w-1/4 mt-3 shrink-0">
           <Navbar />
         </div>
-
-        <div className="col-span-2 justify-items-center col-start-2 bg-[#ede3da] p-5 border-2 border-solid border-black rounded-xl mt-5">
+        <div className="flex-1 justify-items-center bg-[#ede3da] p-5 border-2 border-solid border-black rounded-xl mt-5">
           <p className="text-3xl text-center" id="philosophy">
             Server Philosophy
           </p>
@@ -281,7 +280,7 @@ export default function Handbook() {
             If that resonates with you, you’re exactly who this world is for.
           </p>
         </div>
-        <div className="col-span-1 col-start-4">
+        <div className="w-1/4 shrink-0">
           <SideNav />
         </div>
       </div>
