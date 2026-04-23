@@ -10,275 +10,300 @@ export default function Handbook() {
           <Navbar />
         </div>
         <div className="flex-1 justify-items-center bg-[#ede3da] p-5 border-2 border-solid border-black rounded-xl mt-5">
-          <p className="text-3xl text-center" id="philosophy">
-            Server Philosophy
+          <p className="text-center text-3xl my-5" id="welcome">
+            Welcome to The Frontiers!
           </p>
+          <p className="mt-2 mb-5">
+            Welcome everybody to The Frontiers, a vanilla server for Minecraft
+            Java!
+          </p>
+          <p className="my-2">It only has one goal:</p>
           <p className="my-2">
-            This server is intentionally designed as a long-term world.
+            To be a long-lasting, community focused environment dedicated to
+            preserving its own history and players.
           </p>
-          <p>
-            It starts small and expands slowly as the community grows. The goal
-            is to create density, shared infrastructure, and meaningful history,
-            not isolation or speedrunning.
-          </p>
-          <p className="my-5">
-            Systems such as travel costs and the diamond economy are
-            intentionally structured to encourage cooperation, town-building,
-            and long-term progression.
-          </p>
-          <ul>
-            <li className="mb-2">There are no seasons.</li>
-            <li className="mb-2"> There are no resets.</li>
-            <li className="mb-2">This world grows outward over time.</li>
+          <p className="my-2">Everything available to you is intentional.</p>
+          <ul className="my-2">
+            <BulletItem>There are no seasons</BulletItem>
+            <BulletItem>There are no world resets</BulletItem>
+            <BulletItem>The world grows with its community</BulletItem>
           </ul>
           <p>
-            If you’re looking for a fast-paced, high-chaos environment, this may
-            not be the right server for you.
+            I hope to provide a warm and welcoming place for everybody to come
+            back to, be creative, and socialize.
           </p>
-          <p className="my-2">
-            If you’re looking to build something lasting with others, welcome.
-          </p>
+          <p className="mb-40">Enjoy everybody!</p>
 
-          <p className="text-3xl text-center mt-10" id="expectations">
+          <p className="text-3xl text-center mt-10 mb-5" id="expectations">
             Community Expectations
           </p>
           <p className="my-2">
-            This server is community-driven and long-term. The following
-            expectations are fundamental:{" "}
+            With a server that is dedicated to its own community and longevity,
+            there are some expectations for the community that is fundamental to
+            keeping this server running:
           </p>
-          <ul className="space-y-1">
+          <ul>
             <BulletItem>Respect other players and their time.</BulletItem>
             <BulletItem>
-              No griefing, stealing, or exploitation of other players.
+              No griefing, or exploitation of other players.
             </BulletItem>
             <BulletItem>
-              No x-ray, duping, or unintended mechanics abuse.
+              No x-ray, duping, or abuse of unintended mechanics.
             </BulletItem>
             <BulletItem>No harassment or targeted toxicity.</BulletItem>
             <BulletItem>
-              Disagreements are handled calmly and respectfully.
+              All disagreements must be handled calmly and respectfully.
             </BulletItem>
             <BulletItem>
-              No abuse of loopholes or “gray-area” mechanics.
+              There is no abuse of "grey-areas" or loopholes in the rules or
+              mechanics.
             </BulletItem>
             <BulletItem>
-              Free speech is allowed and encouraged, as long as it is used
-              respectfully.
+              Free speech is allowed, and encouraged, as long as it remains
+              completely respectful.
             </BulletItem>
           </ul>
-          <p>
-            Moderators cannot issue permanent bans. Major decisions are sent to
-            review by an admin or the owner to ensure fairness and consistency.
-            This server prioritizes stability over speed of judgment.
+          <p className="mb-2 mt-5">
+            If any rules are suspected of being broken, moderators are able to
+            place an account on suspension, until an admin makes a final
+            decision for disciplinary action.
           </p>
+          <p className="mb-40 mt-2">
+            If there is an appeal to a decision that you would like to make, the
+            resources will be provided to you.
+          </p>
+
           <p className="text-3xl text-center mt-10 mb-3" id="expansion">
-            World Structure & Expansion
+            World Expansion
           </p>
-          <p>The world begins with a limited border.</p>
-          <ul>
-            <BulletItem>Initial border: 5,000 x 5,000</BulletItem>
-            <BulletItem>Expands periodically as the community grows</BulletItem>
-            <BulletItem>Border expansions are planned, not reactive</BulletItem>
+          <p className="mt-5 mb-2">
+            The world is the second most important part to this server, behind
+            the players themselves.
+          </p>
+          <p className="my-2">This world will expand like so:</p>
+          <ul className="mb-40">
+            <BulletItem>First week: Border is 5,000x5,000 blocks.</BulletItem>
+            <BulletItem>
+              Second week: Border expands to 10,000x10,000 blocks.
+            </BulletItem>
+            <BulletItem>
+              The border will expand by 5000 blocks every 3 months, unless the
+              community grows large enough for another expansion.
+            </BulletItem>
           </ul>
-          <p>This is done to:</p>
-          <ul>
-            <BulletItem>Prevent early player scattering.</BulletItem>
-            <BulletItem>Encourage town formation.</BulletItem>
-            <BulletItem>Create meaningful infrastructure.</BulletItem>
-            <BulletItem>Preserve long-term history.</BulletItem>
-          </ul>
-          <p className="mb-5">Expansion is part of the server’s identity.</p>
+
           <p className="text-3xl text-center mt-10 mb-2" id="travel">
-            Travel & Teleportation
+            Player Travel
           </p>
-          <p>Travel is intentionally designed with light friction.</p>
-          <p className="text-2xl my-2 text-center">Physical Travel</p>
-          {/* Not sure whether this should be centered ^ (will ask big boss man for opinion) */}
-          <p>The following changes will be made for physical travel:</p>
+          <p className="mt-4">
+            Player travel on this server has a few differences to vanilla
+            Minecraft.
+          </p>
+
+          <p className="text-2xl text-center mb-2 mt-10">
+            Physical Travel Changes
+          </p>
+          <p className="mt-4 mb-2">
+            The changes made to physical travel will be as such:
+          </p>
           <ul>
+            <BulletItem>Disabled Rocket Boosting with Elytra</BulletItem>
             <BulletItem>
-              Minecarts will be equal to the speed of a boat on packed ice
+              Implemented the Minecart Improvements, alongside increasing
+              minecarts to the same speed as boats on ice.
             </BulletItem>
             <BulletItem>
-              Rocket boosting with elytra will be permanently disabled
-            </BulletItem>
-            <BulletItem>
-              Nether Highways are encouraged, and will be treated as
-              player-built infrastructure
+              Nether and Overworld Highways will be encouraged, and are treated
+              as critical player-built infrastructure.
             </BulletItem>
           </ul>
-          <p className="text-2xl my-2 text-center">Command Teleports</p>
-          <p>
-            The following commands cost
-            <span className="font-bold">1 diamond</span> from your wallet:
+
+          <p className="text-2xl text-center mb-2 mt-10">Teleporting</p>
+          <p className="mt-4 mb-2">
+            Teleporting will have a different concept to most other Minecraft
+            server, and should not be taken for granted.
           </p>
-          <ul className="mb-5">
+
+          <p className="my-2">
+            As such, this is what to expect from our home-brew teleporting
+            system:
+          </p>
+          <ul>
             <BulletItem>/spawn</BulletItem>
-            <BulletItem>/home</BulletItem>
-            <BulletItem>/tpa (player-to-player teleport)</BulletItem>
+            <BulletItem>/home (alongside /sethome)</BulletItem>
+            <BulletItem>/tpa (alongside its variants)</BulletItem>
           </ul>
-          <p className="mb-5">These commands also have cooldowns.</p>
-          <p>This system encourages:</p>
-          <ul>
-            <BulletItem>Roads</BulletItem>
-            <BulletItem>Rail networks</BulletItem>
-            <BulletItem>Player-built infrastructure</BulletItem>
-            <BulletItem>Physical exploration</BulletItem>
-          </ul>
-          <p className="text-2xl my-2 text-center">
+
+          <p className="my-2">
+            We have implemented a system where the use of each of these commands
+            will cost <span className="font-bold">1 diamond</span>, straight
+            from your inventory, alongside a 15 minute cooldown.
+          </p>
+          <p className="my-2">
+            This is to encourage the on-foot exploration of the world, and
+            everybody's wonderful creations on the way to your destination.
+          </p>
+          <p className="text-2xl text-center mb-2 mt-10">
             Cardinal Warp System (CWS)
           </p>
-          <p>At Month 6 (20,000 border), the Cardinal Warp System will open.</p>
+          <p className="mt-4 mb-2">
+            At Month 6, the border will increase to 20,000x20,000.
+          </p>
           <p className="my-2">
-            This system allows teleportation from spawn to 4 fixed warp plates
-            located 10,000 blocks away in each cardinal direction.
+            This will unlock a system visible from day one called the Cardinal
+            Warp System, or CWS.
           </p>
-          <p>
-            These warp points are permanent and will not expand further outward.
+          <p className="my-2">
+            The CWS is a completely free way to travel long distances in the
+            four cardinal directions from spawn (North, East, South, West).
           </p>
-          <p className="my-2">Their purpose is to: </p>
-          <ul>
-            <BulletItem>Encourage distant regional development</BulletItem>
-            <BulletItem>Support large-scale town growth</BulletItem>
-            <BulletItem>Maintain infrastructure relevance</BulletItem>
-          </ul>
-          <p>Beyond those warp points, physical travel is required.</p>
+          <p className="my-2">
+            Each direction will have four fixed warp plates, which will not
+            expand any further than initially set (10,000 blocks from spawn, in
+            the four directions)
+          </p>
+          <p className="mt-2 mb-40">
+            The purpose of these is to encourage people to develop further out
+            regions in the world, while also providing easier access for players
+            wanting to travel.
+          </p>
+
           <p className="text-3xl text-center mb-2 mt-10" id="towns">
-            Towns & Community Growth
+            Towns & Town Spotlight
           </p>
-          <p>Towns are strongly encouraged but not mandatory.</p>
-          <p className="my-2">
-            The server is designed to reward density and cooperation. Building
-            near others creates:
-          </p>
-          <ul>
-            <BulletItem>Trade opportunities</BulletItem>
-            <BulletItem>Infrastructure growth</BulletItem>
-            <BulletItem>Cultural identity</BulletItem>
-            <BulletItem>Spotlight eligibility</BulletItem>
-          </ul>
-          <p className="my-2 mb-4">
-            Isolation is allowed but interaction is rewarded.
-          </p>
-          <p className="text-3xl text-center mb-2 mt-10" id="spotlight">
-            Towns & Community Growth
-          </p>
-          <p className="my-2 mb-4">
-            Towns are strongly encourgaed but not mandatory
-          </p>
-          <p className="my-2 mb-4">
-            The server is designed to reward density and cooperation. Building
-            near others creates:
-          </p>
-          <ul>
-            <BulletItem>Trade opportunities</BulletItem>
-            <BulletItem>Infrastrucutre growth</BulletItem>
-            <BulletItem>Cultural identity</BulletItem>
-            <BulletItem>Spotlight eligibility</BulletItem>
-          </ul>
-          <p className="my-2 mb-4">
-            Isolation is allowed, but interaction is rewarded.
-          </p>
-          <p className="text-3xl text-center mb-2 mt-10" id="spotlight">
-            Town Spotlight
+          <p className="mt-4 mb-2">
+            With a server designed around close community interaction, we
+            completely endorse and encourage the creation of towns and
+            individual communities.
           </p>
           <p className="my-2">
-            Each month, towns may apply for the Town Spotlight.
+            If you think you may have a potentially successful town, or would
+            love to just be put on the map, you are able to register your town
+            publicly.
           </p>
-          <p className="my-2">Requirements include:</p>
-          <ul>
-            <BulletItem>Safe teleport location</BulletItem>
-            <BulletItem>Clear infrastructure</BulletItem>
-            <BulletItem>Moderator approval</BulletItem>
+          <p className="my-2">
+            Once you have registered your town, and it has been accepted, you
+            will notice that your town is now visible on the web-map of the
+            server.
+          </p>
+          <p className="my-2">
+            Alongside, your town is now registered into our monthly event called
+            the "Town Spotlight", were everybody votes for a town to be featured
+            for that month.
+          </p>
+          <p className="my-2">
+            For the users, the town spotlight is accessible by the command
+            /townspotlight. The first usage is free, after that it will cost 3
+            diamonds to use it again.
+          </p>
+          <p className="my-2">
+            For the town owner, every teleport to the town spotlight equates to
+            3 diamonds, and by the end of that month, all diamonds get deposited
+            directly into the town owners inventory.
+          </p>
+          <p className="mt-5 mb-2">This is all to encourage a few things:</p>
+          <ul className="mt-2 mb-40">
+            <BulletItem>Individual town and community growth</BulletItem>
             <BulletItem>
-              32 diamond application fee (refunded if unsuccessful)
+              Economic gain for the town in the spotlight, as well as the
+              surrounding area
             </BulletItem>
+            <BulletItem>Beautiful builds worth exploring and seeing</BulletItem>
+            <BulletItem>Larger community interaction</BulletItem>
           </ul>
-          <p className="my-2">Players vote on the spotlight town.</p>
-          <p className="my-2">If selected:</p>
-          <ul>
-            <BulletItem>First teleport to the town is free</BulletItem>
-            <BulletItem>Subsequent teleports cost 3 diamonds</BulletItem>
-            <BulletItem>
-              All teleport income goes to the spotlighted town at month’s end
-            </BulletItem>
-          </ul>
-          <p className="my-2">The spotlight exists to:</p>
-          <ul>
-            <BulletItem>Encourage town beautification</BulletItem>
-            <BulletItem>Promote trade</BulletItem>
-            <BulletItem>Drive exploration</BulletItem>
-            <BulletItem>Reward active communities</BulletItem>
-          </ul>
-          <p className="my-2">Towns cannot win consecutively.</p>
-          <p className="text-3xl text-center mb-2 mt-10" id="late-game">
-            Villager & Late-Game Balance
+          <p className="text-3xl text-center mb-2 mt-10" id="gameplay-changes">
+            Gameplay Changes
           </p>
-          <p className="my-2">
-            Certain vanilla mechanics may be adjusted to preserve:
+
+          <p className="mt-4 mb-2">
+            The gameplay has also been adjusted in ways to preserve the server.
           </p>
-          <ul>
-            <BulletItem>Player interdependence</BulletItem>
-            <BulletItem>Long-term progression</BulletItem>
-          </ul>
-          <p className="my-2">Examples may include:</p>
+          <p className="my-2">Some changes are:</p>
           <ul>
             <BulletItem>Villager trade limitations</BulletItem>
-            <BulletItem>Elytra travel adjustments</BulletItem>
-            <BulletItem>Exploit prevention</BulletItem>
+            <BulletItem>Elytra boost being disabled</BulletItem>
+            <BulletItem>Minecart changes</BulletItem>
           </ul>
-          <p className="my-2">
-            Any mechanical adjustments will be documented clearly.
+          <p className="mt-2 mb-40">
+            Any future changes will be clearly documented here, alongside a
+            public announcement.
           </p>
           <p className="text-3xl text-center mb-2 mt-10" id="staff">
-            Staff & Goverance
+            Server Staff
           </p>
-          <p className="my-2 text-lg">Moderators:</p>
-          <ul>
-            <BulletItem>Handle reports</BulletItem>
-            <BulletItem>Issue temporary actions</BulletItem>
-            <BulletItem>Send cases to review</BulletItem>
+          <p className="mt-4 mb-2">
+            The server staff are here to assist and manage the community and
+            server.
+          </p>
+          <p className="my-2">Please treat them with respect.</p>
+          <p className="my-2 font-bold">Moderator</p>
+          <ul className="my-2">
+            <BulletItem>Handles reports</BulletItem>
+            <BulletItem>Issues temporary suspensions</BulletItem>
+            <BulletItem>Sends any issues or cases to review</BulletItem>
+            <BulletItem>General community guides</BulletItem>
           </ul>
-          <p className="my-2 text-lg">Admins/Owner:</p>
-          <ul>
-            <BulletItem>Make final disciplinary decisions</BulletItem>
-            <BulletItem>Oversee economic systems</BulletItem>
-            <BulletItem>Maintain server stability</BulletItem>
+          <p className="mt-4 mb-2 font-bold">Admin</p>
+          <ul className="my-2">
+            <BulletItem>Makes final disciplinary action</BulletItem>
+            <BulletItem>Oversees staff and community</BulletItem>
+            <BulletItem>Maintains server stability</BulletItem>
           </ul>
+          <p className="mt-4 mb-2 font-bold">Host</p>
           <p className="my-2">
-            Staff are expected to act calmly, fairly, and transparently.
+            This will be Pixel, there is a lot to this job, that will not be
+            mentioned here, but he is happy to answer any questions!
+          </p>
+          <p className="mt-2 mb-40">
+            All staff will act in accordance to training and their own beliefs
+            in handling a situation. If there are any issues with how staff has
+            treated you, please report this immediately.
           </p>
           <p className="text-3xl text-center mb-2 mt-10" id="transparency">
             Transparency
           </p>
-          <p className="my-2">This server values openness.</p>
-          <p className="my-2">Publicly available information will include:</p>
-          <ul>
-            <BulletItem>Major policy changes</BulletItem>
-            <BulletItem>Border expansion timeline</BulletItem>
-            <BulletItem>Town spotlight archive</BulletItem>
+          <p className="mt-4 mb-2">
+            This server values transparency and openness with it's community.
+          </p>
+          <p className="my-2">
+            We will share as much publicly available information as possible,
+            such as:
+          </p>
+          <ul className="my-2">
+            <BulletItem>Policy changes</BulletItem>
+            <BulletItem>Project timelines</BulletItem>
+            <BulletItem>Information archives</BulletItem>
+            <BulletItem>Disciplinary records (within reason)</BulletItem>
           </ul>
-          <p className="my-2">Trust is built through clarity.</p>
+          <p className="mt-2 mb-40">
+            I believe in trust built through transparency, so if there is any
+            questions or queries, feel free to ask them in the discord!
+          </p>
           <p className="text-3xl text-center mb-2 mt-10" id="final">
             Final Notes
           </p>
-          <p className="my-2">This server is built slowly and deliberately.</p>
-          <p className="my-2">It is not designed for:</p>
-          <ul>
-            <BulletItem>Speedrunning the End in week one</BulletItem>
-            <BulletItem>Isolated megabases at 50,000 blocks</BulletItem>
-            <BulletItem>Hyper-competitive chaos</BulletItem>
-          </ul>
-          <p className="my-2">It is designed for:</p>
-          <ul>
-            <BulletItem>Shared growth</BulletItem>
-            <BulletItem>Long-term builds</BulletItem>
-            <BulletItem>Infrastructure</BulletItem>
-            <BulletItem>Stability</BulletItem>
-          </ul>
-          <p className="my-2">
-            If that resonates with you, you’re exactly who this world is for.
+          <p className="mt-4 mb-2">
+            This server is intentionally designed to run slowly.
           </p>
+          <p className="my-2">
+            Please do not treat the server as a ground for speedrunning, or
+            being hyper-competitive.
+          </p>
+          <p className="mt-2 mb-40">
+            The server is designed to run slowly, with a large focus on being
+            social. If this resonates with you, you're exactly who this server
+            is designed for!
+          </p>
+          <p className="text-3xl text-center mb-2 mt-10" id="credits">
+            Credits
+          </p>
+          <p className="mt-4 mb-2">Host & Head Developer: pixel1523</p>
+          <p className="my-2">Website Developer: mrdewmon66</p>
+          <p className="my-2">Jackson from Airsoft: h1ghjaxed</p>
+          <p className="mt-5 mb-2">Current Moderators:</p>
+          <p className="my-2">N/A</p>
+          <p className="mt-5 mb-2">Current Admins:</p>
+          <p className="my-2">N/A</p>
         </div>
         <div className="w-1/4 shrink-0">
           <SideNav />

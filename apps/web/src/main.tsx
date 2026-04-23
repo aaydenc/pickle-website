@@ -6,7 +6,7 @@ import Home from "./pages/Home/Home";
 import UnderConstruction from "./pages/UnderConstruction/UnderConstruction";
 import DesktopOnly from "./shared/DesktopOnly";
 // import Spotlight from "./pages/Spotlight/Spotlight";
-// import Handbook from "./pages/Handbook/Handbook";
+import Handbook from "./pages/Handbook/Handbook";
 
 createRoot(document.getElementById("root")!).render(
   <BrowserRouter>
@@ -15,7 +15,7 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/" element={<Home />} />
         <Route path="/construction" element={<UnderConstruction />} />
         <Route path="/spotlight" element={<UnderConstruction />} />
-        <Route path="/handbook" element={<UnderConstruction />} />
+        <Route path="/handbook" element={<Handbook />} />
         <Route path="/map" element={<UnderConstruction />} />
       </Routes>
     </DesktopOnly>
