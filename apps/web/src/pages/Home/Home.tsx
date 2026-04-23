@@ -11,7 +11,7 @@ export default function Home() {
         <img
           src={frontier_title}
           alt="Blocky text of the frontiers"
-          className="h-30 p-2"
+          className="h-32 p-2"
         />
 
         <div className="flex justify-center gap-4">
