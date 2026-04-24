@@ -6,7 +6,7 @@ export default function Handbook() {
   return (
     <>
       <div className="flex gap-4">
-        <div className="w-1/4 mt-3 shrink-0">
+        <div className="mt-3 w-[340px]">
           <Navbar />
         </div>
         <div className="flex-1 justify-items-center bg-[#ede3da] p-5 border-2 border-solid border-black rounded-xl mt-5">
