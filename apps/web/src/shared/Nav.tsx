@@ -40,7 +40,7 @@ export default function Navbar() {
               <ListItem>Player Handbook</ListItem>
             </NavLink>
             <NavLink
-              to="map.thefrontiers.net:8080"
+              to="http://map.thefrontiers.net:8080"
               end
               // className={({ isActive }) =>
               //   isActive ? "underline" : "text-black"
