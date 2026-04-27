@@ -300,6 +300,7 @@ export default function Handbook() {
           <p className="mt-4 mb-2">Host & Head Developer: pixel1523</p>
           <p className="my-2">Website Developer: mrdewmon66</p>
           <p className="my-2">Jackson from Airsoft: h1ghjaxed</p>
+          {/* <p className="my-2">Spike Rowan: Spike Rowan</p> */}
           <p className="mt-5 mb-2">Current Moderators:</p>
           <p className="my-2">N/A</p>
           <p className="mt-5 mb-2">Current Admins:</p>
