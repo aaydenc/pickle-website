@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 type DesktopOnlyProps = {
   children: React.ReactNode;
@@ -25,6 +26,16 @@ export default function DesktopOnly({ children }: DesktopOnlyProps) {
             <p className="text-xl font-semibold mb-2">Desktop recommended</p>
             <p className="text-gray-600">
               This site is best experienced on a larger screen.
+            </p>
+            <p>
+              Unless you're looking for the{" "}
+              <NavLink
+                to="http://map.thefrontiers.net:8080"
+                end
+                className="text-blue-500"
+              >
+                map
+              </NavLink>
             </p>
           </div>
         </div>
