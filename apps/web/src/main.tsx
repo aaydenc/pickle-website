@@ -13,7 +13,6 @@ createRoot(document.getElementById("root")!).render(
     <DesktopOnly>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/construction" element={<UnderConstruction />} />
         <Route path="/spotlight" element={<UnderConstruction />} />
         <Route path="/handbook" element={<Handbook />} />
         <Route path="/map" element={<UnderConstruction />} />
