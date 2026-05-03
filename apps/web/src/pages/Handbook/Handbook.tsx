@@ -220,7 +220,10 @@ export default function Handbook() {
           </p>
           <p className="my-2">Some changes are:</p>
           <ul>
-            <BulletItem>Villager trade limitations</BulletItem>
+            <BulletItem>
+              Villager trade limitations: All diamond tools and armor are now
+              gold variants
+            </BulletItem>
             <BulletItem>Elytra boost being disabled</BulletItem>
             <BulletItem>Minecart changes</BulletItem>
           </ul>
